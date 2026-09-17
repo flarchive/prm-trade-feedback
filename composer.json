@@ -1,0 +1,26 @@
+{
+    "name": "prm/trade-feedback",
+    "description": "Users can leave positive, neutral, or negative trade feedback as buyer or seller.",
+    "type": "flarum-extension",
+    "version": "0.1.0",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prm\\TradeFeedback\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Trade Feedback",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-handshake",
+                "backgroundColor": "#1b4f72",
+                "color": "#fff"
+            }
+        }
+    }
+}
