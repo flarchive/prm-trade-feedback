@@ -1,0 +1,63 @@
+prm-trade-feedback:
+  admin:
+    permissions:
+      give_label: Ticaret puanı gönder
+      moderate_label: Ticaret puanlarını yönet
+    settings:
+      notice_label: Form uyarısı
+      notice_help: Geri bildirim formunun altında gösterilir.
+  forum:
+    nav: Ticaret
+    leave_button: Geri bildirimde bulun
+    leave_title: "Geri bildirimde bulunun {username}"
+    stats:
+      trade: Ticaret
+      percent: Ticaret Yüzdesi
+      given_positive: Pozitif Bildirim Gönderimi
+      given_neutral: Tarafsız Bildirim Gönderimi
+      given_negative: Negatif Bildirim Gönderimi
+      total_positive: Toplam Pozitif Bildirim
+      last_30d: Son 30 Gün
+      last_6m: Son 6 Ay
+      last_1y: Son 1 Yıl
+      positive: Pozitif
+      neutral: Tarafsız
+      negative: Negatif
+    filters:
+      received: Alınanlar
+      given: Verilenler
+      all: Hepsi
+      positive: Pozitif
+      neutral: Tarafsız
+      negative: Negatif
+    table:
+      options: Seçenekler
+      sender: Gönderen
+      receiver: Alan
+      date: Tarih
+      empty: Henüz ticaret puanı yok.
+    form:
+      role: Siz
+      role_placeholder: (Seçin)
+      role_buyer: Alıcı
+      role_seller: Satıcı
+      role_trade: Ticaret
+      rating: Genel Deneyiminiz
+      rating_positive: Pozitif (+1)
+      rating_neutral: Tarafsız (0)
+      rating_negative: Negatif (-1)
+      short_comment: Kısa Yorum
+      short_help: "Not: Toplam 80 karakter olmalı, HTML kullanmayın."
+      thread_url: Konu URL
+      thread_help: "Örnek: http://localhost:8088/d/1"
+      comment: Yorum
+      submit: Gönder
+      cancel: İptal
+    actions:
+      edit: Düzenle
+      delete: Sil
+      confirm_delete: Bu ticaret puanı silinsin mi?
+    notifications:
+      received: "{username} size ticaret puanı gönderdi"
+      notify_received_label: Biri bana ticaret puanı gönderdiğinde
+    user_controls: Geri bildirimde bulun

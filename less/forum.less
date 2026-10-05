@@ -1,0 +1,165 @@
+.TradePage-panel {
+  background: var(--control-bg);
+  border-radius: var(--border-radius);
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+
+.TradePage-head {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.TradePage-stats {
+  display: grid;
+  grid-template-columns: ~"minmax(0, 1fr) minmax(0, 1fr)";
+  gap: 18px;
+}
+
+.TradePage-statRow {
+  display: grid;
+  grid-template-columns: ~"minmax(0, 1fr) auto";
+  gap: 12px;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.TradePage-statRow dt {
+  margin: 0;
+  font-weight: 600;
+}
+
+.TradePage-statRow dd {
+  margin: 0;
+}
+
+.TradePage-periods {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.TradePage-period {
+  background: transparent;
+  border: 0;
+  color: var(--muted-color);
+  cursor: pointer;
+  padding: 0;
+  font-weight: 700;
+}
+
+.TradePage-period.active {
+  color: var(--primary-color);
+}
+
+.TradePage-meter {
+  display: grid;
+  grid-template-columns: ~"22px minmax(90px, auto) minmax(0, 1fr) auto";
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 13px;
+}
+
+.TradePage-meterBar {
+  height: 8px;
+  background: var(--body-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.TradePage-meterBar > span {
+  display: block;
+  height: 100%;
+  background: #2ecc71;
+}
+
+.TradePage-meter--neutral .TradePage-meterBar > span {
+  background: #3498db;
+}
+
+.TradePage-meter--negative .TradePage-meterBar > span {
+  background: #e74c3c;
+}
+
+.TradePage-icon--positive {
+  color: #2ecc71;
+}
+
+.TradePage-icon--neutral {
+  color: #3498db;
+}
+
+.TradePage-icon--negative {
+  color: #e74c3c;
+}
+
+.TradePage-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 10px;
+}
+
+.TradePage-tableWrap {
+  overflow-x: auto;
+}
+
+.TradePage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.TradePage-table th,
+.TradePage-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--control-bg);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.TradePage-table th {
+  font-weight: 600;
+  color: var(--muted-color);
+}
+
+.TradePage-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.TradePage-pager {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 14px;
+}
+
+.TradePage-pager .Button {
+  min-width: 32px;
+}
+
+.LeaveFeedbackModal .Form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.LeaveFeedbackModal .helpText {
+  margin-top: 6px;
+}
+
+.LeaveFeedbackModal textarea {
+  width: 100%;
+  min-height: 120px;
+}
+
+@media @phone {
+  .TradePage-stats {
+    grid-template-columns: ~"minmax(0, 1fr)";
+  }
+}
